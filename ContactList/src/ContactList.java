@@ -137,6 +137,21 @@ public class ContactList {
         return s;
     }
 
+    public boolean equals(ContactList other) {
+        if (this.lastIndex != other.lastIndex) {
+            return false;
+        }
+        if (contacts.length != other.contacts.length) {
+            return false;
+        }
+        for (int i = 0; i < this.lastIndex; i++) {
+            if (!contacts[i].equals(other.contacts[i])) {
+                return false;
+            }
+        }
+        return true;
+    }
+
     /* homework 4 */
 
     public void moveToEnd(int index) {
