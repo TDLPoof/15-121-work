@@ -8,7 +8,7 @@ The following method is supposed to remove all duplicates from an ArrayList of I
             		if (list.get(i) == list.get(j))
                 		list.remove(j);
         		}
-    	}
+    		}
 	}
 	
 Clearly identify all logical errors in this implementation. Derive the worst-case runtime complexity of this algorithm in Big-O notation if the list has n integers in it. When does this worst-case occur?
