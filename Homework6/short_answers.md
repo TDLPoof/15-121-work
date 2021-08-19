@@ -5,9 +5,9 @@ The following method is supposed to remove all duplicates from an ArrayList of I
     	int numValues = list.size();
     	for (int i = 0; i < numValues-1; i++) {
         	for (int j = i+1; j < numValues; j++) {
-            	if (list.get(i) == list.get(j))
-                	list.remove(j);
-        	}
+            		if (list.get(i) == list.get(j))
+                		list.remove(j);
+        		}
     	}
 	}
 	
